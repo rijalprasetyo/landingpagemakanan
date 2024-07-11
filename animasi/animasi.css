@@ -1,0 +1,183 @@
+/* Global animation for fade-in effect */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+@keyframes slideInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+/* Base class for elements to animate on scroll */
+.animate-on-scroll {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+/* When in view, add animation */
+.animate-on-scroll.in-view {
+    opacity: 1;
+    visibility: visible;
+}
+
+.fade-in {
+    animation: fadeIn 1s forwards;
+}
+
+.slide-in-left {
+    animation: slideInLeft 1s forwards;
+}
+
+.slide-in-right {
+    animation: slideInRight 1s forwards;
+}
+
+/* Specific elements */
+#home .row {
+    animation: fadeIn 1s ease-out forwards;
+}
+
+#carouselExampleIndicators .carousel-item {
+    animation: fadeIn 1s ease-out forwards;
+}
+
+#about {
+    animation: fadeIn 1s ease-out forwards;
+    animation-delay: 0.5s;
+}
+
+#product h3, #product .row {
+    animation: slideInLeft 1s ease-out forwards;
+    animation-delay: 0.5s;
+}
+
+#contact {
+    animation: fadeIn 1s ease-out forwards;
+    animation-delay: 0.5s;
+}
+
+.product-card {
+    opacity: 0;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.product-card:nth-child(odd) {
+    animation-name: slideInLeft;
+}
+
+.product-card:nth-child(even) {
+    animation-name: slideInRight;
+}
+
+.product-card:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.product-card:nth-child(4) {
+    animation-delay: 0.4s;
+}
+
+/* Adjust delay and animation for other cards as needed */
+
+.contact-info div {
+    animation: slideInRight 1s ease-out forwards;
+    animation-delay: 0.5s;
+}
+
+/* Additional styling */
+.custom-search-btn {
+    color: #FFC107;
+    border-color: #FFC107;
+}
+
+.custom-search-btn:hover {
+    background-color: #FFC107;
+    color: white;
+}
+
+.custom-search-btn:focus, 
+.custom-search-btn:active {
+    background-color: #FFC107;
+    color: white;
+    box-shadow: none;
+}
+/* Animation for moving text */
+@keyframes moveRight {
+    0% {
+        left: -100%; /* Mulai dari luar layar kiri */
+    }
+    100% {
+        left: 100%; /* Akhir di luar layar kanan */
+    }
+}
+
+.moving-text-container {
+    position: fixed; /* Tetap di posisi saat scrolling */
+    top: 70px; /* Atur posisi dari atas navbar */
+    left: -100%; /* Mulai dari luar layar kiri */
+    width: 100%; /* Lebar sesuai dengan halaman */
+    background-color: rgba(192, 224, 192, 0.288); /* Warna latar belakang */
+    padding: 10px 0; /* Padding atas bawah untuk memisahkan tulisan dari latar belakang */
+    white-space: nowrap; /* Agar teks tidak pindah ke baris baru */
+    animation: moveRight 10s linear infinite; /* Animasi ke kanan, sesuaikan kecepatan (10s) */
+    z-index: 1000; /* Menempatkan di atas elemen lain */
+}
+
+.moving-text {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+#contact {
+    animation: fadeIn 1s ease-out forwards;
+}
+
+#contact .row {
+    animation: fadeIn 1s ease-out forwards;
+    animation-delay: 0.3s;
+}
+
+#contact .col-md-3 {
+    animation: fadeIn 1s ease-out forwards;
+    animation-delay: 0.5s;
+}
+
+

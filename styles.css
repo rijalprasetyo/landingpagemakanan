@@ -1,0 +1,289 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+    background-color: #06D001;
+    padding-top: 10px; /* Atur padding atas navbar */
+    padding-bottom: 10px; /* Atur padding bawah navbar */
+    margin-bottom: 0; /* Hapus margin bawah jika ada */
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: #ffffff !important; /* Yellow color for the brand */
+    margin-right: 15rem;
+}
+
+.navbar-nav .nav-link {
+    color: #ffffff !important; /* Yellow color for nav links */
+    font-weight: 500;
+}
+
+
+.store-name {
+    font-size: 2em;
+    font-weight: bold;
+    color: #06D001;
+    margin-top: 13rem; /* Adjust the top margin for the store name */
+    font-size: 2.5rem; /* Example size adjustment */
+
+}
+.tagline {
+    font-size: 1.2rem; /* Example size adjustment */
+    color: #777; /* Example color adjustment */
+    margin-bottom: 1rem; /* Example bottom margin */
+}
+.welcome-image {
+    max-width: 60%; /* Ensures the image is responsive */
+    height: auto; /* Maintains the aspect ratio of the image */
+    margin-top: 2rem; /* Adjusts the top margin for spacing */
+}
+
+.custom-search-btn {
+    color: #ffffff; /* Warna teks tombol */
+    border-color: #fefefe;
+    color: white; /* Warna border tombol */
+}
+
+.custom-search-btn:hover {
+    background-color: #68ac23; /* Warna background saat tombol di-hover */
+    color: white; /* Warna teks saat tombol di-hover */
+}
+
+.carousel {
+    max-height: 500px;
+    overflow: hidden;
+}
+#home {
+    margin-top: 10; /* Aligns the top of the home section closer to the top */
+    padding-top: 20px; /* Atur padding atas home section */
+    margin-top: 0; /* Hapus margin atas jika ada */
+}
+.carousel-caption {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: left;
+}
+
+.carousel-caption h5 {
+    background-color: rgba(0, 0, 0, 0.5);
+    display: inline-block;
+    padding: 0.5em;
+}
+
+.carousel-caption p {
+    background-color: rgba(0, 0, 0, 0.5);
+    display: inline-block;
+    padding: 0.5em;
+}
+
+.carousel-caption .btn {
+    background-color: rgba(255, 193, 7, 0.8); /* Yellow button */
+    border: none;
+    padding: 0.5em 1em;
+}
+
+section {
+    padding: 60px 0;
+}
+
+
+.card img {
+    height: 200px;
+    object-fit: cover;
+}
+
+.product-card {
+    background-color: #FFC107;
+    transition: transform 0.2s, box-shadow 0.s;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.product-card .card-body {
+    background-color: #059212;
+    color: white;
+}
+
+.product-card .btn {
+    background-color: #ffffff;
+    border: none;
+    color: #059212;
+    font-weight: bold;
+}
+
+.product-card .btn:hover {
+    background-color: #9bec00;
+    color: #f3ff90;
+}
+
+footer p {
+    margin: 0;
+}
+
+#contact {
+    background-color: #06D001;
+    color: white;
+}
+
+
+#contact a {
+    color: white;
+    text-decoration: none;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+#contact h2 {
+    margin-bottom: 40px;
+}
+
+#contact img {
+    border-radius: 10px;
+}
+
+#contact iframe {
+    border-radius: 10px;
+}
+
+#contact .row > div {
+    text-align: left;
+}
+
+#contact .row > div p {
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .carousel-caption {
+        font-size: 14px;
+        padding: 5px;
+    }
+
+    #product .row {
+        display: block;
+    }
+
+    #product .col-md-3 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    #contact .row div {
+        text-align: center;
+    }
+
+    .welcome-image {
+        display: none;
+    }
+
+    .store-name {
+        font-size: 1.5rem;
+    }
+
+    .tagline {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .navbar-brand {
+        text-align: center; /* Posisikan teks di tengah */
+        font-size: 1.5rem; /* Sesuaikan ukuran font */
+        display: block; /* Pastikan elemen adalah block agar text-align berfungsi */
+        width: auto; /* Atur lebar menjadi otomatis */
+    }
+
+    .navbar-nav .nav-item {
+        margin: 0.5rem 0;
+    }
+
+    .welcome-image {
+        display: none;
+    }
+
+    .store-name {
+        font-size: 1.25rem;
+    }
+
+    .tagline {
+        font-size: 0.875rem;
+    }
+
+    #product .row {
+        display: block;
+    }
+
+    #product .col-md-3 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    #product .col-md-3:nth-child(odd) {
+        clear: left;
+    }
+    #back-to-top-btn {
+        font-size: 20px; /* Ukuran ikon yang lebih kecil untuk mobile */
+        padding: 12px; /* Padding yang lebih kecil */
+        bottom: 10px; /* Jarak dari bawah yang lebih sedikit */
+        right: 10px; /* Jarak dari kanan yang lebih sedikit */
+    }
+    
+    #back-to-top-btn::before {
+        font-size: 20px; /* Ukuran ikon yang lebih kecil untuk mobile */
+    }
+}
+
+
+
+/* Animation */
+.animate-on-scroll {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.animate-on-scroll.in-view {
+    opacity: 1;
+}
+
+#back-to-top-btn {
+    display: none; /* Sembunyikan tombol secara default */
+    position: fixed; /* Tetap di posisi saat scroll */
+    bottom: 20px; /* Jarak dari bawah */
+    right: 30px; /* Jarak dari kanan */
+    z-index: 99; /* Atur z-index agar muncul di atas konten */
+    font-size: 24px; /* Ukuran ikon */
+    border: none; /* Hilangkan border */
+    outline: none; /* Hilangkan focus outline */
+    background-color: #4CAF50; /* Warna latar belakang hijau */
+    color: white; /* Warna teks putih */
+    cursor: pointer; /* Pointer saat hover */
+    padding: 15px; /* Padding untuk ruang di dalam tombol */
+    border-radius: 50%; /* Bentuk sudut bulat */
+    transition: background-color 0.3s; /* Transisi warna latar belakang */
+}
+
+#back-to-top-btn:hover {
+    background-color: #388E3C; /* Warna latar belakang hijau lebih gelap saat hover */
+}
+
+/* Ikon panah ke atas dari Bootstrap Icons */
+#back-to-top-btn i {
+    font-size: inherit; /* Ukuran ikon mengikuti ukuran tombol */
+    color: white; /* Warna ikon putih */
+}
+
+
+
